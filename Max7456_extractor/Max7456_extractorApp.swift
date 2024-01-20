@@ -11,7 +11,7 @@ import SwiftUI
 struct Max7456_extractorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: .init())
         }
     }
 }

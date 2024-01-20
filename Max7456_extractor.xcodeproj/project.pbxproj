@@ -11,6 +11,13 @@
 		5DDCB1A82B56F24800C9EF58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDCB1A72B56F24800C9EF58 /* ContentView.swift */; };
 		5DDCB1AA2B56F24A00C9EF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDCB1A92B56F24A00C9EF58 /* Assets.xcassets */; };
 		5DDCB1AD2B56F24A00C9EF58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDCB1AC2B56F24A00C9EF58 /* Preview Assets.xcassets */; };
+		5DDCB1B52B56F5A500C9EF58 /* ImageReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDCB1B42B56F5A500C9EF58 /* ImageReader.swift */; };
+		5DDCB1B92B59082100C9EF58 /* PixelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDCB1B82B59082100C9EF58 /* PixelData.swift */; };
+		5DDCB1BB2B59087100C9EF58 /* CGImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDCB1BA2B59087100C9EF58 /* CGImageExtensions.swift */; };
+		5DDCB1BE2B5B2EF200C9EF58 /* FileOpenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDCB1BD2B5B2EF200C9EF58 /* FileOpenView.swift */; };
+		5DDCB1C02B5B34DB00C9EF58 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDCB1BF2B5B34DB00C9EF58 /* ArrayExtensions.swift */; };
+		5DDCB1C42B5B394500C9EF58 /* ImageViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDCB1C32B5B394500C9EF58 /* ImageViewerView.swift */; };
+		5DDCB1C62B5B43DB00C9EF58 /* ImageExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDCB1C52B5B43DB00C9EF58 /* ImageExporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		5DDCB1A92B56F24A00C9EF58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DDCB1AC2B56F24A00C9EF58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5DDCB1AE2B56F24A00C9EF58 /* Max7456_extractor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Max7456_extractor.entitlements; sourceTree = "<group>"; };
+		5DDCB1B42B56F5A500C9EF58 /* ImageReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageReader.swift; sourceTree = "<group>"; };
+		5DDCB1B82B59082100C9EF58 /* PixelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelData.swift; sourceTree = "<group>"; };
+		5DDCB1BA2B59087100C9EF58 /* CGImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageExtensions.swift; sourceTree = "<group>"; };
+		5DDCB1BD2B5B2EF200C9EF58 /* FileOpenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOpenView.swift; sourceTree = "<group>"; };
+		5DDCB1BF2B5B34DB00C9EF58 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		5DDCB1C32B5B394500C9EF58 /* ImageViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerView.swift; sourceTree = "<group>"; };
+		5DDCB1C52B5B43DB00C9EF58 /* ImageExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				5DDCB1A52B56F24800C9EF58 /* Max7456_extractorApp.swift */,
-				5DDCB1A72B56F24800C9EF58 /* ContentView.swift */,
+				5DDCB1C22B5B34F700C9EF58 /* View */,
+				5DDCB1C12B5B34EA00C9EF58 /* Extension */,
+				5DDCB1B82B59082100C9EF58 /* PixelData.swift */,
+				5DDCB1B42B56F5A500C9EF58 /* ImageReader.swift */,
+				5DDCB1C52B5B43DB00C9EF58 /* ImageExporter.swift */,
 				5DDCB1A92B56F24A00C9EF58 /* Assets.xcassets */,
 				5DDCB1AE2B56F24A00C9EF58 /* Max7456_extractor.entitlements */,
 				5DDCB1AB2B56F24A00C9EF58 /* Preview Content */,
@@ -67,6 +85,25 @@
 				5DDCB1AC2B56F24A00C9EF58 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5DDCB1C12B5B34EA00C9EF58 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5DDCB1BF2B5B34DB00C9EF58 /* ArrayExtensions.swift */,
+				5DDCB1BA2B59087100C9EF58 /* CGImageExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5DDCB1C22B5B34F700C9EF58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DDCB1A72B56F24800C9EF58 /* ContentView.swift */,
+				5DDCB1BD2B5B2EF200C9EF58 /* FileOpenView.swift */,
+				5DDCB1C32B5B394500C9EF58 /* ImageViewerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DDCB1BB2B59087100C9EF58 /* CGImageExtensions.swift in Sources */,
+				5DDCB1C42B5B394500C9EF58 /* ImageViewerView.swift in Sources */,
+				5DDCB1BE2B5B2EF200C9EF58 /* FileOpenView.swift in Sources */,
+				5DDCB1C02B5B34DB00C9EF58 /* ArrayExtensions.swift in Sources */,
+				5DDCB1B52B56F5A500C9EF58 /* ImageReader.swift in Sources */,
 				5DDCB1A82B56F24800C9EF58 /* ContentView.swift in Sources */,
+				5DDCB1C62B5B43DB00C9EF58 /* ImageExporter.swift in Sources */,
+				5DDCB1B92B59082100C9EF58 /* PixelData.swift in Sources */,
 				5DDCB1A62B56F24800C9EF58 /* Max7456_extractorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +314,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Max7456_extractor/Preview Content\"";
-				DEVELOPMENT_TEAM = 6CX35BBHC2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -297,7 +341,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Max7456_extractor/Preview Content\"";
-				DEVELOPMENT_TEAM = 6CX35BBHC2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
